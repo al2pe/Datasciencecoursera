@@ -2,3 +2,5 @@ trading-journal/.env.local
 trading-journal/node_modules/
 trading-journal/.next/
 trading-journal/data/journal.db
+trading-journal/data/journal.db-shm
+trading-journal/data/journal.db-wal
