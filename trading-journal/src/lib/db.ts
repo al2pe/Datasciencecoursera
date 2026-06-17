@@ -2,7 +2,10 @@ import Database from 'better-sqlite3'
 import path from 'path'
 import fs from 'fs'
 
-const DB_PATH = path.join(process.cwd(), 'data', 'journal.db')
+// On Vercel, process.cwd() is read-only — use /tmp instead
+const DB_PATH = process.env.VERCEL
+  ? '/tmp/journal.db'
+  : path.join(process.cwd(), 'data', 'journal.db')
 
 let _db: Database.Database | null = null
 
