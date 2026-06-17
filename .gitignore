@@ -1,0 +1,4 @@
+trading-journal/.env.local
+trading-journal/node_modules/
+trading-journal/.next/
+trading-journal/data/journal.db
